@@ -1,0 +1,8 @@
+; Warning - every name in this file is ABSOLUTE!
+$ORIGIN .
+dnssec-broken.measurement.email-security-scans.org	86400	IN	SOA	dns-dnssec-broken.measurement.email-security-scans.org hostmaster.aperture-labs.org 2022020901 28800 7200 604800 86400
+dnssec-broken.measurement.email-security-scans.org	300	IN	NS	dns-dnssec-broken.measurement.email-security-scans.org
+v4-mail.dnssec-broken.measurement.email-security-scans.org	300	IN	MX	10 mail-v4.measurement.email-security-scans.org
+v4-mail-host.dnssec-broken.measurement.email-security-scans.org	300	IN	A	195.191.197.163
+v6-mail.dnssec-broken.measurement.email-security-scans.org	300	IN	MX	10 mail-v6.measurement.email-security-scans.org
+v6-mail-host.dnssec-broken.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::22

@@ -1,0 +1,12 @@
+; Warning - every name in this file is ABSOLUTE!
+$ORIGIN .
+rdns.measurement.email-security-scans.org	86400	IN	SOA	dns.measurement.email-security-scans.org hostmaster.aperture-labs.org 2022021000 28800 7200 604800 86400
+rdns.measurement.email-security-scans.org	300	IN	NS	dns.measurement.email-security-scans.org
+host18.rdns.measurement.email-security-scans.org	300	IN	PTR	db.measurement.email-security-scans.org
+host22.rdns.measurement.email-security-scans.org	300	IN	PTR	mail.measurement.email-security-scans.org
+host25.rdns.measurement.email-security-scans.org	300	IN	PTR	tls-force.measurement.email-security-scans.org
+host26.rdns.measurement.email-security-scans.org	300	IN	PTR	tls-invalid.measurement.email-security-scans.org
+host27.rdns.measurement.email-security-scans.org	300	IN	PTR	greylisting.measurement.email-security-scans.org
+host28.rdns.measurement.email-security-scans.org	300	IN	PTR	dns.measurement.email-security-scans.org
+host29.rdns.measurement.email-security-scans.org	300	IN	PTR	dns-v6.measurement.email-security-scans.org
+host30.rdns.measurement.email-security-scans.org	300	IN	PTR	dns-dnssec-broken.measurement.email-security-scans.org

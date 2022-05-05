@@ -1,0 +1,12 @@
+; Warning - every name in this file is ABSOLUTE!
+$ORIGIN .
+3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	86400	IN	SOA	dns.measurement.email-security-scans.org hostmaster.aperture-labs.org 2022020908 28800 7200 604800 86400
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	gw.email-security-scans.org
+8.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	db.measurement.email-security-scans.org
+2.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	mail.measurement.email-security-scans.org
+5.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	tls-force.measurement.email-security-scans.org
+6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	tls-invalid.measurement.email-security-scans.org
+7.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	greylisting.measurement.email-security-scans.org
+8.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	dns.measurement.email-security-scans.org
+9.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	dns-v6.measurement.email-security-scans.org
+0.3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0.0.0.d.a.e.d.0.c.1.d.6.0.a.2.ip6.arpa	300	IN	PTR	dns-dnssec-broken.measurement.email-security-scans.org

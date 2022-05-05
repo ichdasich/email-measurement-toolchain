@@ -1,0 +1,20 @@
+; Warning - every name in this file is ABSOLUTE!
+; Warning: Parent zone used for CNAME delegation of reverse DNS! Not deployed on same node but usually provided by network
+;          provider/hoster!
+$ORIGIN .
+197.191.195.in-addr.arpa	3600	IN	SOA	dns.aperture-labs.org hostmaster.aperture-labs.org 2022042100 28800 7200 604800 86400
+197.191.195.in-addr.arpa	300	IN	NS	dns.aperture-labs.org
+197.191.195.in-addr.arpa	86400	IN	NS	dns2.aperture-labs.org
+18.197.191.195.in-addr.arpa	300	IN	CNAME	host18.rdns.measurement.email-security-scans.org
+19.197.191.195.in-addr.arpa	300	IN	CNAME	host19.rdns.measurement.email-security-scans.org
+20.197.191.195.in-addr.arpa	300	IN	CNAME	host20.rdns.measurement.email-security-scans.org
+21.197.191.195.in-addr.arpa	300	IN	CNAME	host21.rdns.measurement.email-security-scans.org
+22.197.191.195.in-addr.arpa	300	IN	CNAME	host22.rdns.measurement.email-security-scans.org
+23.197.191.195.in-addr.arpa	300	IN	CNAME	host23.rdns.measurement.email-security-scans.org
+24.197.191.195.in-addr.arpa	300	IN	CNAME	host24.rdns.measurement.email-security-scans.org
+25.197.191.195.in-addr.arpa	300	IN	CNAME	host25.rdns.measurement.email-security-scans.org
+26.197.191.195.in-addr.arpa	300	IN	CNAME	host26.rdns.measurement.email-security-scans.org
+27.197.191.195.in-addr.arpa	300	IN	CNAME	host27.rdns.measurement.email-security-scans.org
+28.197.191.195.in-addr.arpa	300	IN	CNAME	host28.rdns.measurement.email-security-scans.org
+29.197.191.195.in-addr.arpa	300	IN	CNAME	host29.rdns.measurement.email-security-scans.org
+30.197.191.195.in-addr.arpa	300	IN	CNAME	host30.rdns.measurement.email-security-scans.org

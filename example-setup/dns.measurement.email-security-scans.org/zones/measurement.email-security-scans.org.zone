@@ -1,0 +1,56 @@
+; Warning - every name in this file is ABSOLUTE!
+$ORIGIN .
+measurement.email-security-scans.org	86400	IN	SOA	dns.measurement.email-security-scans.org hostmaster.aperture-labs.org 2022020915 28800 7200 604800 86400
+measurement.email-security-scans.org	300	IN	NS	dns.measurement.email-security-scans.org
+measurement.email-security-scans.org	300	IN	CAA	1 issue "letsencrypt.org"
+*.measurement.email-security-scans.org	300	IN	CAA	1 issue "letsencrypt.org"
+db.measurement.email-security-scans.org	300	IN	A	195.191.197.18
+db.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::18
+db.measurement.email-security-scans.org	300	IN	CAA	1 issue "letsencrypt.org"
+dns.measurement.email-security-scans.org	300	IN	A	195.191.197.28
+dns.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::28
+dns-dnssec-broken.measurement.email-security-scans.org	300	IN	A	195.191.197.30
+dns-dnssec-broken.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::30
+dns-dnssec-broken.measurement.email-security-scans.org	300	IN	CAA	1 issue "letsencrypt.org"
+dns-dnssec-broken-v4.measurement.email-security-scans.org	300	IN	A	195.191.197.30
+dns-dnssec-broken-v6.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::30
+dns-v6.measurement.email-security-scans.org	300	IN	A	195.191.197.29
+dns-v6.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::29
+dns-v6.measurement.email-security-scans.org	300	IN	CAA	1 issue "letsencrypt.org"
+dns-v6-v4.measurement.email-security-scans.org	300	IN	A	195.191.197.29
+dns-v6-v6.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::29
+dnssec-broken.measurement.email-security-scans.org	300	IN	NS	dns-dnssec-broken.measurement.email-security-scans.org
+dnssec-broken.measurement.email-security-scans.org	300	IN	DS	29251 13 4 cdb03744c60c8c87996e2fcc5e49072af18493a72af4395fd9ef62b796fcd7786813a80f4e6a33f5cd52685bbc79a2a7
+greylisting.measurement.email-security-scans.org	300	IN	A	195.191.197.27
+greylisting.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::27
+greylisting-v4.measurement.email-security-scans.org	300	IN	A	195.191.197.27
+greylisting-v6.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::27
+mail.measurement.email-security-scans.org	300	IN	A	195.191.197.22
+mail.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::22
+mail-tls-force.measurement.email-security-scans.org	300	IN	MX	10 tls-force.measurement.email-security-scans.org
+mail-tls-invalid.measurement.email-security-scans.org	300	IN	MX	10 tls-invalid.measurement.email-security-scans.org
+mail-tlsa-invalid.measurement.email-security-scans.org	300	IN	MX	10 tlsa-invalid.measurement.email-security-scans.org
+_25._tcp.mail-tlsa-invalid.measurement.email-security-scans.org	300	IN	TLSA	3 0 1 d2abde240d7cd3ee6b4b28c54df034b97983a1d16e8a410e4561cb106618e971
+mail-v4.measurement.email-security-scans.org	300	IN	A	195.191.197.22
+mail-v6.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::22
+rdns.measurement.email-security-scans.org	300	IN	NS	dns.measurement.email-security-scans.org
+rdns.measurement.email-security-scans.org	300	IN	DS	28380 13 4 6b49420156d95351d10385eef65c2d8d07c4463db3bf54f4f6c08eb60852c128d236517300fa827cf018844485e40cfc
+tls-force.measurement.email-security-scans.org	300	IN	A	195.191.197.25
+tls-force.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::25
+tls-force.measurement.email-security-scans.org	300	IN	CAA	1 issue "letsencrypt.org"
+tls-force-v4.measurement.email-security-scans.org	300	IN	A	195.191.197.25
+tls-force-v6.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::25
+tls-invalid.measurement.email-security-scans.org	300	IN	A	195.191.197.26
+tls-invalid.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::26
+tls-invalid-v4.measurement.email-security-scans.org	300	IN	A	195.191.197.26
+tls-invalid-v6.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::26
+tlsa-invalid.measurement.email-security-scans.org	300	IN	A	195.191.197.26
+tlsa-invalid.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::26
+_25._tcp.tlsa-invalid.measurement.email-security-scans.org	300	IN	TLSA	3 0 1 d2abde240d7cd3ee6b4b28c54df034b97983a1d16e8a410e4561cb106618e971
+v4-mail.measurement.email-security-scans.org	300	IN	MX	10 mail-v4.measurement.email-security-scans.org
+v4-mail-greylisting.measurement.email-security-scans.org	300	IN	MX	10 greylisting-v4.measurement.email-security-scans.org
+v6-mail.measurement.email-security-scans.org	300	IN	MX	10 mail-v6.measurement.email-security-scans.org
+v6-mail-greylisting.measurement.email-security-scans.org	300	IN	MX	10 greylisting-v6.measurement.email-security-scans.org
+v6only.measurement.email-security-scans.org	300	IN	NS	dns.v6only.measurement.email-security-scans.org
+v6only.measurement.email-security-scans.org	300	IN	DS	55525 13 4 baebb56d4e88b211e988d41e203fadac4480ffb5636c9a1503c497e8da4b4278b3ae59c5a6fecf72b7426026533acfdb
+dns.v6only.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::29

@@ -1,0 +1,9 @@
+; Warning - every name in this file is ABSOLUTE!
+$ORIGIN .
+v6only.measurement.email-security-scans.org	86400	IN	SOA	dns-v6.measurement.email-security-scans.org hostmaster.aperture-labs.org 2022020900 28800 7200 604800 86400
+v6only.measurement.email-security-scans.org	300	IN	NS	dns.v6only.measurement.email-security-scans.org
+dns.v6only.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::29
+v4-mail.v6only.measurement.email-security-scans.org	300	IN	MX	10 mail-v4.measurement.email-security-scans.org
+v4-mail-host.v6only.measurement.email-security-scans.org	300	IN	A	195.191.197.22
+v6-mail.v6only.measurement.email-security-scans.org	300	IN	MX	10 mail-v6.measurement.email-security-scans.org
+v6-mail-host.v6only.measurement.email-security-scans.org	300	IN	AAAA	2a06:d1c0:dead:3::22

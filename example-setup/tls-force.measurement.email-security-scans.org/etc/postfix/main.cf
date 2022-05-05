@@ -1,0 +1,91 @@
+compatibility_level = 2
+
+queue_directory = /var/spool/postfix
+
+command_directory = /usr/local/sbin
+
+daemon_directory = /usr/local/libexec/postfix
+
+data_directory = /var/postfix
+
+mail_owner = _postfix
+
+
+myhostname = tls-force.measurement.email-security-scans.org
+
+
+myorigin = $myhostname
+
+
+
+inet_protocols = all
+
+
+mydestination = $myhostname, localhost.$mydomain, localhost, mail-tls-force.measurement.email-security-scans.org, /etc/postfix/domains
+
+
+unknown_local_recipient_reject_code = 550
+
+
+
+
+
+
+
+
+
+
+
+
+
+alias_maps = hash:/etc/mail/aliases, regexp:/etc/mail/catch-all
+
+alias_database = hash:/etc/mail/aliases
+
+
+ 
+
+
+
+
+  
+
+
+
+
+
+
+debug_peer_level = 10
+
+
+debugger_command =
+	 PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
+	 ddd $daemon_directory/$process_name $process_id & sleep 5
+
+
+sendmail_path = /usr/local/sbin/sendmail
+
+newaliases_path = /usr/local/sbin/newaliases
+
+mailq_path = /usr/local/sbin/mailq
+
+setgid_group = _postdrop
+
+html_directory = /usr/local/share/doc/postfix/html
+
+manpage_directory = /usr/local/man
+
+sample_directory = /etc/postfix
+
+readme_directory = /usr/local/share/doc/postfix/readme
+meta_directory = /etc/postfix
+shlib_directory = no
+
+smtpd_tls_cert_file=/etc/ssl/acme/tls-force.measurement.email-security-scans.org.fullchain.pem
+smtpd_tls_key_file=/etc/ssl/acme/private/tls-force.measurement.email-security-scans.org.key
+smtpd_use_tls=yes
+smtpd_tls_auth_only=yes
+smtpd_enforce_tls=yes
+smtp_tls_security_level=may
+smtpd_tls_mandatory_protocols = !SSLv2, !SSLv3
+smtpd_tls_loglevel = 2

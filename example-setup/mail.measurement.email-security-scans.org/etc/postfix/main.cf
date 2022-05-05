@@ -1,0 +1,57 @@
+compatibility_level = 2
+
+queue_directory = /var/spool/postfix
+
+command_directory = /usr/local/sbin
+
+daemon_directory = /usr/local/libexec/postfix
+
+data_directory = /var/postfix
+
+mail_owner = _postfix
+
+myhostname = mail.measurement.email-security-scans.org
+
+myorigin = $myhostname
+
+inet_protocols = all
+
+mydestination = localhost.$mydomain, localhost, v4-mail.measurement.email-security-scans.org, v6-mail.measurement.email-security-scans.org, v4-mail.v6only.measurement.email-security-scans.org, v6-mail.v6only.measurement.email-security-scans.org, v4-mail.dnssec-broken.measurement.email-security-scans.org, v6-mail.dnssec-broken.measurement.email-security-scans.org, holzbauer.cf, /etc/postfix/domains
+
+unknown_local_recipient_reject_code = 550
+
+alias_maps = hash:/etc/mail/aliases, regexp:/etc/mail/catch-all
+alias_database = hash:/etc/mail/aliases
+
+debug_peer_level = 10
+
+sendmail_path = /usr/local/sbin/sendmail
+
+newaliases_path = /usr/local/sbin/newaliases
+
+mailq_path = /usr/local/sbin/mailq
+
+setgid_group = _postdrop
+
+html_directory = /usr/local/share/doc/postfix/html
+
+manpage_directory = /usr/local/man
+
+sample_directory = /etc/postfix
+
+readme_directory = /usr/local/share/doc/postfix/readme
+meta_directory = /etc/postfix
+shlib_directory = no
+
+smtp_dns_support_level = dnssec
+smtp_tls_security_level = dane
+
+# SMTP from your server to others
+smtp_tls_note_starttls_offer = yes
+smtp_tls_protocols =           !SSLv2, !SSLv3, !TLSv1, !TLSv1.1
+smtp_tls_mandatory_protocols = !SSLv2, !SSLv3, !TLSv1, !TLSv1.1
+smtp_tls_ciphers = high
+smtp_tls_mandatory_ciphers = high
+smtp_tls_exclude_ciphers =
+    EXP, LOW, MEDIUM, aNULL, eNULL,
+    SRP, PSK, kDH, ADH, AECDH, kRSA, DSS, RC4, DES, IDEA, SEED, ARIA, AESCCM8, 3DES, MD5

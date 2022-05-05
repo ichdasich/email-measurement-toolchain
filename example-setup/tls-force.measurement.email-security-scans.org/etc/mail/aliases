@@ -1,0 +1,2 @@
+measurement: "|/usr/local/sbin/local_delivery.py"
+spam: "|/usr/local/sbin/local_delivery_spam.py"
